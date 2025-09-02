@@ -6,11 +6,11 @@
 <title>Portfólio de Maria Silva</title>
 <meta name="description" content="Portfólio simples feito em HTML puro.">
 </head>
-<body>
+</body>
 <header>
 
-<h1>Portfólio de Alana Ruth 2D</h1>
-<p>Estudante do 2 ano do ensino médio — HTML, CSS e JavaScript.</p>
+<h1>Portfólio de Maria Silva</h1>
+<p>Estudante de desenvolvimento web — HTML, CSS e JavaScript.</p>
 <nav aria-label="Navegação principal">
 <ul>
 <li><a href="#sobre">Sobre</a></li>
@@ -18,8 +18,22 @@
 <li><a href="#contato">Contato</a></li>
 </ul>
 </nav>
-</header> 
-<main><section id="projetos">
+</header>
+<main>
+<section id="sobre">
+<h2>Sobre</h2>
+<figure>
+<img src="https://via.placeholder.com/240" alt="Retrato de Maria sorrindo
+de frente.">
+<figcaption>Foto ilustrativa do perfil</figcaption>
+</figure>
+<p>
+Olá! Sou a Maria e estou começando no desenvolvimento web.
+Gosto de aprender criando projetos simples e práticos.
+</p>
+</section>
+
+<section id="projetos">
 <h2>Projetos</h2>
 <article>
 <h3>Lista de Tarefas (HTML)</h3>
@@ -42,18 +56,29 @@ MDN Web Docs
 <h3>Página de Receitas</h3>
 <p>Estruturação de conteúdo com títulos, parágrafos e imagens.</p>
 </article>
-</section>
-<section id="sobre">
-<h2>Sobre</h2>
-<figure>
-<img src="https://via.placeholder.com/240" alt="Retrato de Maria sorrindo
-de frente.">
-<figcaption>Foto ilustrativa do perfil</figcaption>
-</figure>
+
+<section id="contato">
+<h2>Contato</h2>
+<form action="#" method="post">
 <p>
-Olá! Sou a Alana e estou aprendendo a ultilizar o desenvolvimento web.
-Gosto de aprender criando projetos simples e práticos.
+<label for="nome">Nome</label><br>
+<input id="nome" name="nome" type="text" required>
 </p>
+<p>
+<label for="email">E-mail</label><br>
+<input id="email" name="email" type="email" required>
+</p>
+<p>
+<label for="mensagem">Mensagem</label><br>
+<textarea id="mensagem" name="mensagem" rows="4"
+required></textarea>
+</p>
+<p>
+<button type="submit">Enviar</button>
+</p>
+</form>
 </section>
-</body>
-</html>
+</main>
+<footer>
+<small>&copy; 2025 Maria Silva. Todos os direitos reservados.</small>
+</footer>
